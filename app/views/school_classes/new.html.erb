@@ -2,7 +2,8 @@
 
 <%= form_for school_classes_path do |school_class| %>
 
-<%= school_class.text_field :'school_class_title' %>
+<%= school_class.label 'Title' %>
+<%= school_class.text_field :title %>
 
 <%= school_class.label :'school_class_room_number' %>
 <%= school_class.number_field :'school_class_room_number' %>
